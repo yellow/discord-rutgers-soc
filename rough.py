@@ -14,7 +14,7 @@ def get_results(query = 'data'):
         # openSections = json.loads(openS.read())
     open_req = requests.get('https://sis.rutgers.edu/soc/api/openSections.gzip?year=2020&term=9&campus=CM')
     open_sections = json.loads(open_req.text)
-
+    print('Data downloaded and parsed successfully')
 
     for i in j:
         title = i['title']
